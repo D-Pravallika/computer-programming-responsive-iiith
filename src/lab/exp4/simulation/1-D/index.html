@@ -5,6 +5,19 @@
 <link href = 'http://fonts.googleapis.com/css?family=Inconsolata' rel = 'stylesheet' type = 'text/css' > 
 <script src = 'array.js' ></script>
 <title>Computer-Programming</title>
+<style>
+	.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+</style>
 </head>
 
 <body>
@@ -62,6 +75,7 @@
 			<div class = 'unsortedKeyLabelText' >Unsorted</div>
 			<div class = 'keyPositionLabel' ></div>
 			<div class = 'keyPositionLabelText' >Key Position</div>
+			<p>Right arrow: <i class="arrow right"></i></p>
 		</div><!-- end of KeyPointerDisplayDivision -->
 		<div class = 'sortingDivision' id = 'sortingDiv' ></div>
 		<div class = 'currentKeyPositionIndicator' >
