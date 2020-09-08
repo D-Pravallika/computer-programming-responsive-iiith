@@ -18,7 +18,11 @@ window.view = {
 		this.changeClass(this.nextRedDiv.id, 'showDivInRed')
 	},
 	getInput: function() {
+
 		 var input = Number(document.getElementById('input').value)
+		 if (input <0 || input >20){
+		 	alert("Invalid input")
+		 }
 		 if ( input === 0 )
 		 	alert('Enter number of disks first !')
 		 else if ( isNaN(input) === true )
