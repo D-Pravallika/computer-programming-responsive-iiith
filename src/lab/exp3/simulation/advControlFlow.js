@@ -201,6 +201,9 @@ window.view = {
 		this.changeClass(this.nextRedDiv.id, 'showDivInRed')
 	},
 	processSimpleLoopStep: function(loopHeadId) {
+		if(loopHeadId>21){
+			alert("Invalid number")
+		}
 		this.updateModelAndShowResult()					
 		this.nextRedDiv = this.jumpTo(loopHeadId)
 		this.highlightNextStep()
